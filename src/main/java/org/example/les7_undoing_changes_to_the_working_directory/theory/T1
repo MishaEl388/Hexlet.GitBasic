@@ -1,4 +1,4 @@
-Undoing changes to the working directory
+Undoing changes to the working directory\Отмена изменений в рабочей дирректории
 
 git clean чистит ВСе незакоммиченные изменения
 -f force -d directory
