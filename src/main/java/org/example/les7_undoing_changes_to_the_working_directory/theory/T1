@@ -1,0 +1,11 @@
+Undoing changes to the working directory
+
+git clean чистит ВСе незакоммиченные изменения
+-f force -d directory
+
+echo "new text">info.md
+#отменяем изменения
+git restore info.md
+
+#переместим изменения с индекса в рабочую деррикторию
+git restore --staged
