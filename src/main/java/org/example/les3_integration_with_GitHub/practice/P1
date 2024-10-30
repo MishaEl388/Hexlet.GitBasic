@@ -1,0 +1,44 @@
+/usr/src/app$ git clone repos/git-user code-user
+Cloning into 'code-user'...
+done.
+/usr/src/app$ cd code-user
+/usr/src/app/code-user$ echo "I like to change files" >>hexlet.txt
+/usr/src/app/code-user$ echo "<h1>С помощью Git можно писать книги</h1>" >index.html
+/usr/src/app/code-user$ git commit -m "123"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'tirion@307601addf33.(none)')
+/usr/src/app/code-user$ git config --global user.email "you@example.com"
+/usr/src/app/code-user$ git config --global user.name "Your Name"
+
+/usr/src/app/code-user$ git add hexlet.txt
+/usr/src/app/code-user$ git add index.html
+/usr/src/app/code-user$ git commit -m "123"
+[main b13f970] 123
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+/usr/src/app/code-user$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+/usr/src/app/code-user$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 380 bytes | 380.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To /usr/src/app/repos/git-user
+   e511117..b13f970  main -> main
+/usr/src/app/code-user$
