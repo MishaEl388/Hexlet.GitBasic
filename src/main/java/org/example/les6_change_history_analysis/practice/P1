@@ -1,5 +1,5 @@
 /usr/src/app$ cd code-user
-/usr/src/app/code-user$ git log
+/usr/src/app/code-user$ git log       #показать коммиты
 commit a83d69c31e5d9a9b0e0ccc7db7b02a435eb6c2de (HEAD -> main)
 Author: Student <support@hexlet.io>
 Date:   Tue Oct 13 22:05:47 2020 +0000
@@ -23,7 +23,7 @@ Author: Student <support@hexlet.io>
 Date:   Mon Oct 5 20:36:14 2020 +0000
 
     add hexlet.txt
-/usr/src/app/code-user$ git show a83d69c
+/usr/src/app/code-user$ git show a83d69c   #ПОКАЗАТЬ ИЗМЕНЕНИЯ В КОММИТЕ
 commit a83d69c31e5d9a9b0e0ccc7db7b02a435eb6c2de (HEAD -> main)
 Author: Student <support@hexlet.io>
 Date:   Tue Oct 13 22:05:47 2020 +0000
