@@ -1,0 +1,7 @@
+Как вернуться после git checkout обратно на последний коммит?
+
+С помощью команды git checkout <HEAD sha>
+
+С помощью команды rm && git clone
+
+С помощью команды git checkout main +

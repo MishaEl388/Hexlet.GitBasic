@@ -1,0 +1,26 @@
+moving through history\перемещение по истории
+
+воспользуемся командой git log
+
+# Показывает сокращенный вывод
+git log --oneline
+
+fc74e2d update README.md
+65a8ef7 Revert "remove PEOPLE.md"
+5120bea add new content
+e6f625c add INFO.md
+273f81c remove NEW.md
+aa600a4 remove PEOPLE.md
+fe9893b add NEW.md
+3ce3c02 add PEOPLE.md
+3c5d976 add README.md
+
+используем команду git checkout <хеш коммита>:
+
+git checkout e6f625c
+
+закончим
+
+git checkout main
+
+Самый простой способ узнать место нахождения — вызвать команду git branch.
