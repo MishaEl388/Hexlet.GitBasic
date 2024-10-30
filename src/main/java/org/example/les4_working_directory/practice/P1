@@ -1,5 +1,10 @@
 git status
 
-git restore *****
+modified:   hexlet.txt
+deleted:    index.html
 
-git restore ****
+git restore hexlet.txt
+
+git restore index.html
+
+#Изменения отменены (после add и commit)
