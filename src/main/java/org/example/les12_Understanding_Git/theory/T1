@@ -1,0 +1,45 @@
+Understanding Git\Понимание Git
+
+ давайте выведем коммиты нашего проекта Hexlet.GitBasic в специальном виде,
+  который активируется опцией --graph:
+
+ * commit f9e723bdeeb41d85894f3b470cf50beed98c0ecb (HEAD -> 12les, origin/11les, 11les)
+ | Author: Misha_97 <Misha_Poch>
+ | Date:   Wed Oct 30 23:13:32 2024 +0300
+ |
+ |     11урок\3
+ |
+ * commit bcb250104bef8cab8a94ae2181bf4b1da82f20b2
+ | Author: Misha_97 <Misha_Poch>
+ | Date:   Wed Oct 30 23:07:04 2024 +0300
+ |
+ |     11урок\3Q
+ |
+ * commit c92f6ec8f6adba4bd4993050b554dcf827a0600c
+ | Author: Misha_97 <Misha_Poch>
+ | Date:   Wed Oct 30 22:59:23 2024 +0300
+ |
+ |     11урок
+ |
+ *   commit ebafec8610870cc874772ec38caf1ad036579732 (origin/main, main)
+ |\  Merge: 13e7da4 e654e9c
+ | | Author: MishaEl388 <northern.bowman@gmail.com>
+ | | Date:   Wed Oct 30 22:10:07 2024 +0300
+ | |
+ | |     Merge pull request #16 from MishaEl388/9les
+ | |
+ | |     9урок
+ :
+
+ С точки зрения информатики коммиты выстраиваются в односвязный список.В терминологии Git такой список
+  называется веткой (branch).
+ В таком списке каждый элемент ссылается на предыдущий. Последний элемент при этом называется головой списка
+
+ # HEAD~1 означает: взять голову и удалить один коммит, начиная от нее
+ # То есть мы удаляем только последний коммит
+ git reset --hard HEAD~1
+
+ Ветки
+
+ цепочка коммитов в Git это не просто односвязный список.
+ Это направленный ациклический граф — множество односвязных списков, переплетенных вместе.
