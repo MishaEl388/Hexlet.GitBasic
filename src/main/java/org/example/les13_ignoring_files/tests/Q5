@@ -1,0 +1,6 @@
+Допишите файл gitignore так, чтобы игнорировалась только директория
+node_modules/ в корне проекта:
+
+access.log
+/node_modules/ (+)
+/coverage/
